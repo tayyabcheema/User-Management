@@ -1,0 +1,32 @@
+[debug] [2023-05-14T13:10:59.533Z] ----------------------------------------------------------------------
+[debug] [2023-05-14T13:10:59.536Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tayyab Cheema\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-05-14T13:10:59.536Z] CLI Version:   12.0.0
+[debug] [2023-05-14T13:10:59.537Z] Platform:      win32
+[debug] [2023-05-14T13:10:59.537Z] Node Version:  v18.16.0
+[debug] [2023-05-14T13:10:59.538Z] Time:          Sun May 14 2023 18:10:59 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-14T13:10:59.538Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-14T13:10:59.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-14T13:10:59.640Z] > authorizing via signed-in user (smartlearning47@gmail.com)
+[debug] [2023-05-14T13:10:59.641Z] [iam] checking project users-data-4cf04 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-14T13:10:59.643Z] > refreshing access token with scopes: []
+[debug] [2023-05-14T13:10:59.645Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-14T13:10:59.645Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-14T13:11:00.560Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-14T13:11:00.561Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-14T13:11:00.599Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/users-data-4cf04:testIamPermissions [none]
+[debug] [2023-05-14T13:11:00.599Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/users-data-4cf04:testIamPermissions x-goog-quota-user=projects/users-data-4cf04
+[debug] [2023-05-14T13:11:00.600Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/users-data-4cf04:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-14T13:11:02.772Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/users-data-4cf04:testIamPermissions 200
+[debug] [2023-05-14T13:11:02.772Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/users-data-4cf04:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-14T13:11:02.774Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/users-data-4cf04 [none]
+[debug] [2023-05-14T13:11:03.827Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/users-data-4cf04 200
+[debug] [2023-05-14T13:11:03.828Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/users-data-4cf04 {"projectId":"users-data-4cf04","projectNumber":"793886717796","displayName":"Users-Data","name":"projects/users-data-4cf04","resources":{"hostingSite":"users-data-4cf04","realtimeDatabaseInstance":"users-data-4cf04-default-rtdb"},"state":"ACTIVE","etag":"1_003f3553-9e7c-4b7d-9ace-c84bac8be5bf"}
+[info] 
+[info] === Deploying to 'users-data-4cf04'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-14T13:11:03.843Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/users-data-4cf04/versions [none]
+[debug] [2023-05-14T13:11:03.843Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/users-data-4cf04/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-14T13:11:06.251Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/users-data-4cf04/versions 200
+[debug] [2023-05-14T13:11:06.251Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/users-data-4cf04/versions {"name":"projects/793886717796/sites/users-data-4cf04/versions/bb28a3c4e472dec0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
